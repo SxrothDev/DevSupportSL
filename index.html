@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSupport        | Official Page</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial Black', sans-serif;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* FONDO DE PARTÍCULAS GRISES */
+        .fondo-particulas {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 10% 10%, #222 1px, transparent 1px),
+                radial-gradient(circle at 90% 90%, #333 1px, transparent 1px),
+                radial-gradient(circle at 50% 50%, #111 0%, #000 100%);
+            background-size: 60px 60px;
+            animation: moveParticles 15s linear infinite;
+        }
+        @keyframes moveParticles {
+            from { background-position: 0 0; }
+            to { background-position: 120px 120px; }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            border-bottom: 1px solid #111;
+        }
+
+        .dev-support { font-size: 18px; font-weight: 900; }
+        .dev-support span { color: #444; }
+
+        .contenedor { 
+            padding: 40px 20px; 
+            max-width: 500px; 
+            margin: auto; 
+            flex: 1; 
+            text-align: center;
+        }
+
+        /* CUADRO DE INTRODUCCIÓN CON BORDE ROJO */
+        .intro-box {
+            background: rgba(10, 10, 10, 0.8);
+            border: 3px solid #ff0000;
+            padding: 25px;
+            text-align: left;
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+
+        .intro-box h2 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .intro-box p {
+            font-family: sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #ccc;
+            margin: 0;
+        }
+
+        /* BOTONES DE REDES */
+        .redes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .btn-link {
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 15px;
+            width: 100%;
+            max-width: 300px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .btn-link:hover {
+            background: #000;
+            color: #fff;
+            border-color: #ff0000;
+        }
+
+        .discord-info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #5865F2;
+            letter-spacing: 1px;
+        }
+
+        /* COPYRIGHT EN CHICO */
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 9px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fondo-particulas"></div>
+
+    <nav class="navbar">
+        <div class="dev-support">Dev<span>Support</span></div>
+    </nav>
+
+    <div class="contenedor">
+        
+        <div class="intro-box">
+            <h2>BIENVENIDO</h2>
+            <p>
+                Esta es la página de <b>DevSupport</b>. Aquí encontrarás acceso a mi comunidad de YouTube, 
+                servidores de Discord y soporte para desarrollo en Studio Lite. Únete para mejorar tus habilidades 
+                como creador, no sere el mejor pero poco a poco se mejora entra y mejora con mas personas.
+            </p>
+        </div>
+
+        <div class="redes-container">
+            <a href="https://m.youtube.com/@CxrlosH" class="btn-link">MI CANAL DE YOUTUBE</a>
+            <a href="https://discord.gg/QD9tUX943b" class="btn-link">COMUNIDAD DISCORD</a>
+        </div>
+
+        <div class="discord-info">
+            MI DISCORD: <b>cxrlossl</b>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 CXRLOS_LBA - TODOS LOS DERECHOS RESERVADOS
+    </footer>
+
+</body>
+</html>
