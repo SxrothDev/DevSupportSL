@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSupport | Official Page</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: rgba(20, 20, 20, 0.6);
+            --accent-red: #ff0000;
+            --text-gray: #adadad;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-color);
+            color: #fff;
+            font-family: 'Inter', -apple-system, sans-serif;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* FONDO ANIMADO TIPO BLAZE */
+        .fondo-animado {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0a0a0a 100%);
+        }
+
+        .luz-movil {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 0, 0, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -200px;
+            left: -200px;
+            animation: flotar 15s infinite alternate ease-in-out;
+        }
+
+        @keyframes flotar {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(100vw, 100vh); }
+        }
+
+        /* NAVBAR ESTILO MINIMALISTA */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 10%;
+            align-items: center;
+        }
+
+        .dev-support { font-size: 20px; font-weight: 800; letter-spacing: 1px; }
+        .dev-support span { color: var(--accent-red); }
+
+        .contenedor { 
+            padding: 20px; 
+            max-width: 600px; 
+            margin: auto; 
+            flex: 1; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* CUADRO TIPO CRISTAL (GLASSMORPHISM) */
+        .intro-box {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--accent-red); /* Detalle de color lateral */
+            padding: 30px;
+            text-align: left;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .intro-box h2 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .intro-box p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        /* BOTONES MODERNOS OSCUROS */
+        .redes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-link {
+            background: rgba(255, 255, 255, 0.03);
+            color: #fff;
+            text-decoration: none;
+            padding: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-link:hover {
+            background: rgba(255, 0, 0, 0.1);
+            border-color: var(--accent-red);
+            transform: translateY(-5px);
+        }
+
+        .btn-link::after {
+            content: '→';
+            font-size: 20px;
+            opacity: 0.5;
+        }
+
+        .discord-info {
+            margin-top: 30px;
+            font-size: 13px;
+            color: var(--text-gray);
+            text-align: center;
+        }
+
+        .discord-info b { color: var(--accent-red); }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            font-size: 11px;
+            color: #444;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fondo-animado">
+        <div class="luz-movil"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="dev-support">DEV<span>SUPPORT</span></div>
+    </nav>
+
+    <div class="contenedor">
+        
+        <div class="intro-box">
+            <h2>BIENVENIDO</h2>
+            <p>
+                Esta es la página oficial de <b>DevSupport</b>. Un espacio dedicado a la comunidad de Studio Lite, 
+                scripting y diseño. Aquí comparto recursos, tutoriales y ayuda directa para creadores. 
+                Entra y mejora junto a nosotros en este camino de desarrollo.
+            </p>
+        </div>
+
+        <div class="redes-container">
+            <a href="https://m.youtube.com/@CxrlosH" class="btn-link">CANAL DE YOUTUBE</a>
+            <a href="https://discord.gg/QD9tUX943b" class="btn-link">SERVIDOR DE DISCORD</a>
+        </div>
+
+        <div class="discord-info">
+             CONTACTO DIRECTO: <b>cxrlossl</b>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 CXRLOS_LBA • DESIGNED BY DEV
+    </footer>
+
+</body>
+</html>
