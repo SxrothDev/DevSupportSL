@@ -1,2 +1,2 @@
 # DevSupportSL
-This page is dedicated to helping people with Studio Lite, including modeling and scripting, and improving together. 
+Esta página está dedicada a ayudar a las personas con Studio Lite, incluido el modelado y la creación de scripts, y a mejorarlos juntos. 
